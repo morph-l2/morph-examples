@@ -1,0 +1,3 @@
+[submodule "contract-deployment-demos/foundry_demo/lib/forge-std"]
+	path = contract-deployment-demos/foundry_demo/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
