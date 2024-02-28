@@ -1,5 +1,5 @@
 # morph-examples
-This is the repo of a series of code examples than help developers onboard Morph
+This is the repo of a series of code examples than helps developers onboard onto Morph
 
 <!-- 
 [![Twitter Follow]()](https://twitter.com/Morphl2)
@@ -8,13 +8,13 @@ This is the repo of a series of code examples than help developers onboard Morph
 
 # Morph Examples
 
-The following guides are guidelines tailored to specific subjects. They serve as comprehensive resources, encompassing all the necessary information for successfully accomplishing a particular task.
+The code examples in this repository will range from deploying simple contracts on Morph to building full stack dApps that leverage Morph as its L2. More examples will be added to this repositry and we are open for suggestions on code examples you may want to see in the future.
 
 ## Getting Started
 
-### [contract-deploy-demo](https://github.com/morphl2/morph-examples/tree/main/contract-deploy-demo)
+### [contract-deploy-demo](https://github.com/morphl2/morph-examples/tree/main/contract-deployment-demos)
 
-This project demonstrates how to use hardhat or foundry to deploy a contract in Morph's rollup network. 
+This directory includes projects that demonstrate how to use hardhat or foundry to deploy a contract in Morph's rollup network. 
 
 This project contains a simple contract that will lock a certain amount of Ether in the deployed contract for a specified amount of time.
 

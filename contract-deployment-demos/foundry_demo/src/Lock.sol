@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.24;
+
 
 contract Lock {
     uint public unlockTime;
@@ -18,6 +19,7 @@ contract Lock {
     }
 
     function withdraw() public {
+
         require(block.timestamp >= unlockTime, "You can't withdraw yet");
         require(msg.sender == owner, "You aren't the owner");
 
