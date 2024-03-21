@@ -21,6 +21,7 @@ This project demonstrates how to use hardhat or foundry to deploy a contract in 
 
    ```shell
    git clone https://github.com/morph-l2/morph-examples.git
+   cd morph-examples
    cd contract-deploy-demo
    ```
 
