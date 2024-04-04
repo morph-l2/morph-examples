@@ -13,4 +13,5 @@ node_modules
 /coverage
 /coverage.json
 
+/hardhat-demo/yarn.lock
 .DS_Store
