@@ -2,12 +2,15 @@ node_modules
 .env
 
 # Hardhat files
-/cache
+contract-deploy-demo/cache
 /artifacts
 
 # TypeChain files
 /typechain
 /typechain-types
+
+# Foundry Files
+/contract-deployment-demos/foundry-demo/broadcast
 
 # solidity-coverage files
 /coverage

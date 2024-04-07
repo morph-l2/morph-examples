@@ -22,7 +22,24 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    
   },
+  etherscan: {
+    apiKey: {
+      morphTestnet: 'anything',
+    },
+    customChains: [
+      {
+        network: 'morphTestnet',
+        chainId: 2710,
+        urls: {
+          apiURL: 'https://explorer-api-testnet.morphl2.io/api? ',
+          browserURL: 'https://explorer-testnet.morphl2.io/',
+        },
+      },
+    ],
+  },
+  
 };
 
 export default config;
