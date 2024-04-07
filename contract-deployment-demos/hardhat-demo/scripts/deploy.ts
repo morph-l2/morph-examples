@@ -2,9 +2,11 @@ import { ethers } from "hardhat";
 
 async function main() {
   const currentTimestampInSeconds = Math.round(Date.now() / 1000);
+  // How long you want to lock the ether, here we set 60s after your deployment
   const unlockTime = currentTimestampInSeconds + 60;
 
-  const lockedAmount = ethers.parseEther("0.001");
+  // Set how much ethers you want to lock, here we set 0.00001 ether
+  const lockedAmount = ethers.parseEther("0.00001");
 
   const lock = await ethers.deployContract("Lock", [unlockTime], {
     value: lockedAmount,

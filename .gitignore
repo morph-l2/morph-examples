@@ -9,6 +9,9 @@ node_modules
 /typechain
 /typechain-types
 
+# Foundry Files
+/contract-deployment-demos/foundry-demo/broadcast
+
 # solidity-coverage files
 /coverage
 /coverage.json

@@ -73,7 +73,7 @@ Adjust as needed for your own script names.
 
 Verification requires some flags passed to the normal verification script. You can verify using the command below:
 
- forge verify-contract YOUR_CONTRACT_ADDRESS Counter\
+ forge verify-contract 0x24b16eBA4635f5C5f98bB5CF83661B708160aF7b Counter\
   --chain 2710 \
   --verifier-url $VERIFIER_URL \
   --verifier blockscout --watch
