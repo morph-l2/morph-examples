@@ -2,7 +2,7 @@ node_modules
 .env
 
 # Hardhat files
-/cache
+contract-deploy-demo/cache
 /artifacts
 
 # TypeChain files

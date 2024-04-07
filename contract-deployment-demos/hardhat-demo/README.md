@@ -8,32 +8,92 @@ This project demonstrates how to use hardhat to deploy a contract on the Morph S
 
 ## Deploy with Hardhat
 
-1. If you haven't already, install [nodejs](https://nodejs.org/en/download/) and [yarn](https://classic.yarnpkg.com/lang/en/docs/install).
-2. Run `cd contract-deployment-demos/hardhat-demo` to go the right folder.
-3. Run `yarn install` to install dependencies.
-4. Create a `.env` file following the example `.env.example` in the root directory. Change `PRIVATE_KEY` to your own account private key in the `.env`.
-5. Change the network settings in the hardhat.config.ts file with the following information:
-   ```
+### Install Dependencies
+
+If you haven't already, install [nodejs](https://nodejs.org/en/download/) and [yarn](https://classic.yarnpkg.com/lang/en/docs/install).
+
+```bash
+cd contract-deployment-demos/hardhat-demo
+yarn install
+```
+This will install everything you need include hardhat for you.
+
+
+### Compile
+
+Compile your contract
+
+```bash
+yarn compile
+```
+
+### Test
+
+This will run the test script in test/Lock.ts
+
+```bash
+yarn test
+```
+
+### Deploy
+
+ Create a `.env` file following the example `.env.example` in the root directory. Change `PRIVATE_KEY` to your own account private key in the `.env`.
+
+ And Change the network settings in the hardhat.config.ts file with the following information:
+
+   ```javascript
     morphTestnet: {
       url: process.env.MORPH_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     }
-    ```
-6. Run `yarn compile` or `npx hardhat compile` to compile the contract.
-7. Run `yarn deploy:morphTestnet` or `npx hardhat depoly:morphTestnet` to deploy the contract on the Morph Sepolia Testnet. This will run the deployment script that set the initialing parameters, you can edit the script in scripts/deploy.ts
-8. Once succeed, you can check your contract and the deployment transaction on [Morph Sepolia Explorer](https://explorer-testnet.morphl2.io)
-9. Run `yarn test` for hardhat tests.
-## Prerequisites
+   ```
+Then run the following command to deploy the contract on the Morph Sepolia Testnet. This will run the deployment script that set the initialing parameters, you can edit the script in scripts/deploy.ts
 
-- Network setup: https://docs.morphl2.io/docs/build-on-morph/build-on-morph/development-setup
+```bash
+yarn deploy:morphTestnet
+```
 
-## Deploy with foundry
+### Verify your contracts on Morph Explorer
 
-1. Install foundry by: `curl -L https://foundry.paradigm.xyz | bash` and then `foundryup` in bash
-2. Run `cd contract-deployment-demos/foundry-demo` to go the right folder.
-3. Run `forge build` to compile the contract.
-4. Run `forge test` to test the contract.
+To verify your contract through hardhat, you need to add the following Etherscan and Sourcify configs to your hardhat.config.js file:
+
+```javascript
+module.exports = {
+  networks: {
+    morphSepolia: { ... }
+  },
+  etherscan: {
+    apiKey: {
+      morphTestnet: 'anything',
+    },
+    customChains: [
+      {
+        network: 'morphTestnet',
+        chainId: 2710,
+        urls: {
+          apiURL: 'https://explorer-api-testnet.morphl2.io/api? ',
+          browserURL: 'https://explorer-testnet.morphl2.io/',
+        },
+      },
+    ],
+  },
+};
+```
+Then run the hardhat verfiy command to finish the verification
+
+```bash
+npx hardhat verify --network morphTestnet DEPLOYED_CONTRACT_ADDRESS <ConstructorParameter>
+```
+
+For example
+
+```bash
+npx hardhat verify --network morphTestnet 0x8025985e35f1bAFfd661717f66fC5a434417448E '0.00001'
+```
+
+
+Once succeed, you can check your contract and the deployment transaction on [Morph Sepolia Explorer](https://explorer-testnet.morphl2.io)
    
 
 ## Support
