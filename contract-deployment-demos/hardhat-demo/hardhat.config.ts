@@ -31,10 +31,10 @@ const config: HardhatUserConfig = {
     customChains: [
       {
         network: 'morphTestnet',
-        chainId: 2710,
+        chainId: 2810,
         urls: {
-          apiURL: 'https://explorer-api-testnet.morphl2.io/api? ',
-          browserURL: 'https://explorer-testnet.morphl2.io/',
+          apiURL: 'https://explorer-api-holesky.morphl2.io/api? ',
+          browserURL: 'https://explorer-holesky.morphl2.io/',
         },
       },
     ],

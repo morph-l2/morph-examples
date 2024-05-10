@@ -54,12 +54,12 @@ Verification requires some flags passed to the normal verification script. You c
 
 ```bash
  forge verify-contract <YourConrtactAddress Counter\
-  --chain 2710 \
+  --chain 2810 \
   --verifier-url $VERIFIER_URL \
   --verifier blockscout --watch
 ```
 
-Once succeed, you can check your contract and the deployment transaction on [Morph Sepolia Explorer](https://explorer-testnet.morphl2.io)
+Once succeed, you can check your contract and the deployment transaction on [Morph Holesky Explorer](https://explorer-holesky.morphl2.io)
 
 ### Cast
 

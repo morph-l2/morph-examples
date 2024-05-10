@@ -1,6 +1,6 @@
 # Morph Contract Deployment Demo
 
-This project demonstrates how to use hardhat to deploy a contract on the Morph Sepolia Testnet. This project contains a simple contract that will lock a certain amount of Ether in the deployed contract for a specified amount of time.
+This project demonstrates how to use hardhat to deploy a contract on the Morph Holesky Testnet. This project contains a simple contract that will lock a certain amount of Ether in the deployed contract for a specified amount of time.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ yarn test
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     }
    ```
-Then run the following command to deploy the contract on the Morph Sepolia Testnet. This will run the deployment script that set the initialing parameters, you can edit the script in scripts/deploy.ts
+Then run the following command to deploy the contract on the Morph Holesky Testnet. This will run the deployment script that set the initialing parameters, you can edit the script in scripts/deploy.ts
 
 ```bash
 yarn deploy:morphTestnet
@@ -61,7 +61,7 @@ To verify your contract through hardhat, you need to add the following Etherscan
 ```javascript
 module.exports = {
   networks: {
-    morphSepolia: { ... }
+    morphTestnet: { ... }
   },
   etherscan: {
     apiKey: {
@@ -70,17 +70,17 @@ module.exports = {
     customChains: [
       {
         network: 'morphTestnet',
-        chainId: 2710,
+        chainId: 2810,
         urls: {
-          apiURL: 'https://explorer-api-testnet.morphl2.io/api? ',
-          browserURL: 'https://explorer-testnet.morphl2.io/',
+          apiURL: 'https://explorer-api-holesky.morphl2.io/api? ',
+          browserURL: 'https://explorer-holesky.morphl2.io/',
         },
       },
     ],
   },
 };
 ```
-Then run the hardhat verfiy command to finish the verification
+Then run the hardhat verify command to finish the verification
 
 ```bash
 npx hardhat verify --network morphTestnet DEPLOYED_CONTRACT_ADDRESS <ConstructorParameter>
@@ -93,9 +93,9 @@ npx hardhat verify --network morphTestnet 0x8025985e35f1bAFfd661717f66fC5a434417
 ```
 
 
-Once succeed, you can check your contract and the deployment transaction on [Morph Sepolia Explorer](https://explorer-testnet.morphl2.io)
+Once succeed, you can check your contract and the deployment transaction on [Morph Holesky Explorer](https://explorer-holesky.morphl2.io)
    
 
 ## Support
 
-Thank you for participating in and developing on the Morph Sepolia Testnet! If you encounter any issues, join our [Discord](https://discord.com/invite/5SmG4yhzVZ) and find us at #dev-help channel.
+Thank you for participating in and developing on the Morph Holesky Testnet! If you encounter any issues, join our [Discord](https://discord.com/invite/5SmG4yhzVZ) and find us at #dev-help channel.
