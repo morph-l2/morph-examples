@@ -21,6 +21,7 @@ const config: HardhatUserConfig = {
       url: process.env.MORPH_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      gasPrice: 2000000000 // 2 gwei in wei
     },
     
   },
