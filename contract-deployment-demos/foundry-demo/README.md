@@ -40,7 +40,7 @@ To use the variables in your .env file run the following command:
 source .env
 ```
 
-You can now deploay to Morph with the following command: 
+You can now deploy to Morph with the following command: 
 
 ```shell
 forge script script/Counter.s.sol --rpc-url $RPC_URL --broadcast --private-key $DEPLOYER_PRIVATE_KEY --legacy
@@ -53,7 +53,7 @@ Adjust as needed for your own script names.
 Verification requires some flags passed to the normal verification script. You can verify using the command below:
 
 ```bash
- forge verify-contract <YourConrtactAddress Counter\
+ forge verify-contract YourContractAddress Counter\
   --chain 2810 \
   --verifier-url $VERIFIER_URL \
   --verifier blockscout --watch

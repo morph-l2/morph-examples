@@ -8,7 +8,7 @@ This is the repo of a series of code examples than helps developers onboard onto
 
 # Morph Examples
 
-The code examples in this repository will range from deploying simple contracts on Morph to building full stack dApps that leverage Morph as its L2. More examples will be added to this repositry and we are open for suggestions on code examples you may want to see in the future.
+The code examples in this repository will range from deploying simple contracts on Morph to building full stack dApps that leverage Morph as its L2. More examples will be added to this repository and we are open for suggestions on code examples you may want to see in the future.
 
 ## Getting Started
 
