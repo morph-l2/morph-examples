@@ -12,7 +12,7 @@ The code examples in this repository will range from deploying simple contracts 
 
 ## Getting Started
 
-### [contract-deploy-demo](https://github.com/morphl2/morph-examples/tree/main/contract-deployment-demos)
+### [contract-deploy-demo](https://github.com/morph-l2/morph-examples/tree/main/contract-deployment-demos)
 
 This directory includes projects that demonstrate how to use hardhat or foundry to deploy a contract in Morph's rollup network. 
 
