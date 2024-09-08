@@ -1,5 +1,5 @@
 # morph-examples
-[Lire en français](README.fr.md)
+[Lire en français](./README.fr.md)
 
 This is the repo of a series of code examples that helps developers onboard onto the Morph Ecosystem
 
