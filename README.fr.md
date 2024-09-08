@@ -23,8 +23,7 @@ Ce projet contient un contrat simple qui verrouillera une certaine quantité d'E
 
 
 ### [frontend-demo](https://github.com/varun-doshi/morph-examples/tree/main/frontend_examples/nextjs_wagmi_template)
-This directory consists of a simple Frontend setup allowing you to connect to your smart contract and interact with them from the UI.
-
+Ce répertoire contient une configuration Frontend simple vous permettant de connecter et d'interagir avec vos contrats intelligents directement depuis l'interface utilisateur.
 <!--
 
 ## Miscellaneous
