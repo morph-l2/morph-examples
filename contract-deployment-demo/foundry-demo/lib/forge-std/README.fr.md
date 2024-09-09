@@ -1,5 +1,7 @@
 # Forge Standard Library • [![CI status](https://github.com/foundry-rs/forge-std/actions/workflows/ci.yml/badge.svg)](https://github.com/foundry-rs/forge-std/actions/workflows/ci.yml)
 
+[Lire en Anglais](./README.md)
+
 Forge Standard Library est une collection de contrats et de bibliothèques utiles pour être utilisés avec [Forge and Foundry](https://github.com/foundry-rs/foundry). Elle utilise les "cheatcodes" de Forge pour faciliter et accélérer l'écriture des tests, tout en améliorant l'expérience utilisateur des cheatcodes.
 
 **Apprenez à utiliser Forge-Std avec le [📖 Foundry Book (Forge-Std Guide)](https://book.getfoundry.sh/forge/forge-std.html).**
