@@ -1,5 +1,7 @@
 Il s'agit d'un projet[Next.js](https://nextjs.org/)  démarré avec [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+[Read in English](./README.md)
+
 ## Démarrage
 
 Exécutez `cd frontend_examples/nextjs_wagmi_template`
