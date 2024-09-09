@@ -1,56 +1,57 @@
+[Read in English](./README.md)
 ## Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**Foundry est un outil ultra-rapide, portable et modulaire pour le développement d'applications Ethereum, écrit en Rust.**
 
-Foundry consists of:
+Foundry se compose de :
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+-   **Forge**: Framework de test Ethereum (comme Truffle, Hardhat et DappTools).
+-   **Cast**: Un outil multifonction pour interagir avec les contrats intelligents EVM, envoyer des transactions et obtenir des données de la blockchain.
+-   **Anvil**:Un nœud Ethereum local, similaire à Ganache et Hardhat Network.
+-   **Chisel**:  Un REPL (Read-Eval-Print Loop) pour Solidity rapide et pratique.
 
-## Example Walkthrough
+## Exemple de démarche
 
-### Install Foundry
+### Installer Foundry
 ```bash
 curl -L https://foundry.paradigm.xyz | bash
 foundryup
 ```
 
-Then go the right folder of our example:
+Ensuite, allez dans le bon dossier de notre exemple :
 
 ```bash
 cd contract-deployment-demos/foundry-demo
 ```
 
-### Compile
+### Compiler
 
 ```bash
 forge build
 ```
-### Deploy
+### Deployer
 
-A Deployment script and use of environment variables has already been set up for you. You can view the script at script/Counter.s.sol
+Un script de déploiement et l'utilisation de variables d'environnement sont déjà configurés pour vous. Vous pouvez voir le script à script/Counter.s.sol.
 
-Rename your .env.example file to .env and fill in your private key. The RPC URL has already been filled in along with the verifier URL. 
+Renommez le fichier .env.example en .env et remplissez votre clé privée. L'URL RPC ainsi que l'URL du vérificateur sont déjà préremplies.
 
-To use the variables in your .env file run the following command: 
+Pour utiliser les variables dans votre fichier .env, exécutez la commande suivante :
 
 ```shell
 source .env
 ```
 
-You can now deploy to Morph with the following command: 
+Vous pouvez maintenant déployer sur Morph avec la commande suivante : 
 
 ```shell
 forge script script/Counter.s.sol --rpc-url $RPC_URL --broadcast --private-key $DEPLOYER_PRIVATE_KEY --legacy
 ```
 
-Adjust as needed for your own script names. 
+Ajustez selon les noms de vos propres scripts.
 
-### Verify 
+### Vérifier 
 
-Verification requires some flags passed to the normal verification script. You can verify using the command below:
+La vérification nécessite l'ajout de quelques options au script de vérification habituel. Vous pouvez vérifier en utilisant la commande suivante :
 
 ```bash
  forge verify-contract YourContractAddress Counter\
@@ -59,7 +60,7 @@ Verification requires some flags passed to the normal verification script. You c
   --verifier blockscout --watch
 ```
 
-Once succeed, you can check your contract and the deployment transaction on [Morph Holesky Explorer](https://explorer-holesky.morphl2.io)
+Une fois la vérification réussie, vous pouvez consulter votre contrat et la transaction de déploiement sur[Morph Holesky Explorer](https://explorer-holesky.morphl2.io)
 
 ### Cast
 
