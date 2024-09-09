@@ -6,7 +6,7 @@ Exécutez `cd frontend_examples/nextjs_wagmi_template`
 
 Exécutez `npm install`
 
-Then, run the development server:
+Ensuite, lancez le serveur de développement :
 
 ```bash
 npm run dev
@@ -18,13 +18,13 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Vous pouvez commencer à modifier la page en éditant le fichier  `pages/index.tsx`. La page se met à jour automatiquement à mesure que vous modifiez le fichier.
 
-## ABI and Contract
+## ABI et Contrat
 
-This template comes hardcoded with an ABI and contract address for a simple counter deployed on Morph. You can update these values as needed to connect to your own contracts. 
+Ce modèle contient une ABI et une adresse de contrat prédéfinies pour un compteur simple déployé sur Morph. Vous pouvez mettre à jour ces valeurs selon vos besoins pour vous connecter à vos propres contrats. 
 
 
 
