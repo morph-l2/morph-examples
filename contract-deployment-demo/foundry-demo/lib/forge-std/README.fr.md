@@ -164,10 +164,10 @@ contract Storage {
 
 ### stdCheats
 
-This is a wrapper over miscellaneous cheatcodes that need wrappers to be more dev friendly. Currently there are only functions related to `prank`. In general, users may expect ETH to be put into an address on `prank`, but this is not the case for safety reasons. Explicitly this `hoax` function should only be used for address that have expected balances as it will get overwritten. If an address already has ETH, you should just use `prank`. If you want to change that balance explicitly, just use `deal`. If you want to do both, `hoax` is also right for you.
+C'est un wrapper autour de divers cheatcodes qui nécessitent des wrappers pour être plus conviviaux pour les développeurs. Actuellement, il n'y a que des fonctions liées à `prank`.En général, les utilisateurs peuvent s'attendre à ce que de l'ETH soit envoyé à une adresse lors de `prank`, mais ce n'est pas le cas pour des raisons de sécurité. Explicitement, cette fonction`hoax` ne doit être utilisée que pour les adresses ayant des soldes attendus, car elle va les écraser. Si une adresse possède déjà de l'ETH, vous devriez simplement utiliser  `prank`.Si vous souhaitez modifier ce solde explicitement, utilisez  `deal`. Si vous voulez faire les deux,  `hoax`est également adapté.
 
 
-#### Example usage:
+#### Exemple d'utilisation :
 ```solidity
 
 // SPDX-License-Identifier: MIT
@@ -216,12 +216,12 @@ contract Bar {
 
 ### Std Assertions
 
-Contains various assertions.
+Contient diverses assertions.
 
 ### `console.log`
 
-Usage follows the same format as [Hardhat](https://hardhat.org/hardhat-network/reference/#console-log).
-It's recommended to use `console2.sol` as shown below, as this will show the decoded logs in Forge traces.
+L'utilisation suit le même format que [Hardhat](https://hardhat.org/hardhat-network/reference/#console-log).
+Il est recommandé d'utiliser  `console2.sol`comme indiqué ci-dessous, car cela affiche les logs décodés dans les traces Forge.
 
 ```solidity
 // import it indirectly via Test.sol
@@ -232,8 +232,7 @@ import "forge-std/console2.sol";
 console2.log(someValue);
 ```
 
-If you need compatibility with Hardhat, you must use the standard `console.sol` instead.
-Due to a bug in `console.sol`, logs that use `uint256` or `int256` types will not be properly decoded in Forge traces.
+Si vous avez besoin de compatibilité avec Hardhat, vous devez utiliser `console.sol`standard à la place. En raison d'un bug dans`console.sol`, les logs qui utilisent des types `uint256` ou `int256` ne seront pas correctement décodés dans les traces Forge.
 
 ```solidity
 // import it indirectly via Test.sol
@@ -244,6 +243,6 @@ import "forge-std/console.sol";
 console.log(someValue);
 ```
 
-## License
+## Licence
 
-Forge Standard Library is offered under either [MIT](LICENSE-MIT) or [Apache 2.0](LICENSE-APACHE) license.
+Forge Standard Library est proposé sous licence [MIT](LICENSE-MIT) ou [Apache 2.0](LICENSE-APACHE) .
