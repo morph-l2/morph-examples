@@ -1,5 +1,5 @@
 # Démonstration de Déploiement de Contrat sur Morph
-
+[Read in English](./README.md)
 Ce projet montre comment utiliser Hardhat pour déployer un contrat sur le réseau de test Morph Holesky. Le projet contient un contrat simple qui verrouille une certaine quantité d'Ether pour un temps donné dans le contrat déployé.
 
 ## Prérequis
