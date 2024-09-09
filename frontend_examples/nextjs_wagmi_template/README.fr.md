@@ -1,10 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Il s'agit d'un projet[Next.js](https://nextjs.org/)  démarré avec [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Démarrage
 
-Run `cd frontend_examples/nextjs_wagmi_template`
+Exécutez `cd frontend_examples/nextjs_wagmi_template`
 
-Run `npm install`
+Exécutez `npm install`
 
 Then, run the development server:
 
