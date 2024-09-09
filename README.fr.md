@@ -1,7 +1,6 @@
 # morph-examples
-[Lire en français](./README.fr.md)
-
-This is the repo of a series of code examples that helps developers onboard onto the Morph Ecosystem
+[Read in English](./README.md)
+Ceci est le repo d'une série d'exemples de code qui aide les développeurs à s'intégrer à l'écosystème Morph.
 
 <!-- 
 [![Twitter Follow]()](https://twitter.com/Morphl2)
@@ -10,8 +9,8 @@ This is the repo of a series of code examples that helps developers onboard onto
 
 # Morph Examples
 
-The code examples in this repository will range from deploying simple contracts on Morph to building full stack dApps that leverage Morph as its L2. 
-More examples will be added to this repository and we are open for suggestions on code examples you may want to see in the future.
+Les exemples de code dans ce Repo vont de la mise en ligne de contrats simples sur Morph à la création d'applications décentralisées (dApps) complètes utilisant Morph comme solution de couche 2 (L2).
+D'autres exemples seront ajoutés à ce dépôt, et nous sommes ouverts aux suggestions d'exemples de code que vous aimeriez voir à l'avenir.
 
 ## Getting Started
 
@@ -19,14 +18,13 @@ More examples will be added to this repository and we are open for suggestions o
 * [foundry-deploy](https://github.com/varun-doshi/morph-examples/tree/main/contract-deployment-demos/foundry-demo)
 * [hardhat-deploy](https://github.com/varun-doshi/morph-examples/tree/main/contract-deployment-demos/hardhat-demo)
 
-This directory includes projects that demonstrate how to use **Hardhat** or **Foundry** to deploy a contract in Morph's rollup network. 
+Ce répertoire contient des projets qui démontrent comment utiliser **Hardhat** ou **Foundry** pour déployer un contrat sur le réseau rollup de Morph.
 
-This project contains a simple contract that will lock a certain amount of Ether in the deployed contract for a specified amount of time.
+Ce projet contient un contrat simple qui verrouillera une certaine quantité d'Ether dans le contrat déployé pendant une durée déterminée.
 
 
 ### [frontend-demo](https://github.com/varun-doshi/morph-examples/tree/main/frontend_examples/nextjs_wagmi_template)
-This directory consists of a simple Frontend setup allowing you to connect to your smart contract and interact with them from the UI.
-
+Ce répertoire contient une configuration Frontend simple vous permettant de connecter et d'interagir avec vos contrats intelligents directement depuis l'interface utilisateur.
 <!--
 
 ## Miscellaneous

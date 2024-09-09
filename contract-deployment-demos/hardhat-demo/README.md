@@ -1,5 +1,5 @@
 # Morph Contract Deployment Demo
-
+[Lire en Anglais](./README.fr.md)
 This project demonstrates how to use hardhat to deploy a contract on the Morph Holesky Testnet. This project contains a simple contract that will lock a certain amount of Ether in the deployed contract for a specified amount of time.
 
 ## Prerequisites
