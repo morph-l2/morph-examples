@@ -13,4 +13,8 @@ contract CounterScript is Script {
        vm.stopBroadcast();
        return counter;
    }
+
+   // To deploy the contract, run the following command:
+   // source .env
+   // forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --broadcast --legacy --private-key $PRIVATE_KEY
 }
