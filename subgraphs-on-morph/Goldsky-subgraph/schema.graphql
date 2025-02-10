@@ -1,0 +1,40 @@
+type Property @entity {
+  id: ID!
+  tokenId: BigInt!
+  fractionalContract: Bytes!
+  pricePerShare: BigInt!
+  totalShares: BigInt!
+  sharesSold: BigInt!
+  name: String!
+  uri: String!
+  shares: [Share!]! @derivedFrom(field: "property")
+}
+
+type Share @entity {
+  id: ID!
+  property: Property!
+  owner: User!
+  shares: BigInt!
+  purchaseTimestamp: BigInt!
+}
+
+type User @entity {
+  id: ID!
+  properties: [Share!]! @derivedFrom(field: "owner")
+}
+
+type PropertyCreated @entity {
+  id: ID!
+  tokenId: BigInt!
+  fractionalContract: Bytes!
+  pricePerShare: BigInt!
+  timestamp: BigInt!
+}
+
+type SharesPurchased @entity {
+  id: ID!
+  tokenId: BigInt!
+  buyer: User!
+  shares: BigInt!
+  timestamp: BigInt!
+}

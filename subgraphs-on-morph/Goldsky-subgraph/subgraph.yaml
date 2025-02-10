@@ -1,0 +1,31 @@
+specVersion: 0.0.4
+
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: OkidoFinance Subgraph
+    network: morph-testnet
+    source:
+      address: "0xC97acACa1ed181d88aE2B86Fd49AE66482083B28"
+      abi: Okido
+      startBlock: 4132207
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Property
+        - Share
+        - User
+        - PropertyCreated
+        - SharesPurchased
+      abis:
+        - name: Okido
+          file: ./abis/Okido.json
+      eventHandlers:
+        - event: PropertyCreated(indexed uint256,indexed address,uint256,string,string)
+          handler: handlePropertyCreated
+        - event: SharesPurchased(indexed uint256,indexed address,uint256)
+          handler: handleSharesPurchased
+      file: ./src/mapping.ts
