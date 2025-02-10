@@ -1,0 +1,33 @@
+# Hardhat
+/artifacts
+/cache
+/typechain
+/typechain-types
+coverage.json
+coverage/
+node_modules/
+/broadcast
+
+# Foundry
+/out
+/cache
+/cache_hardhat
+/broadcast
+
+# Coverage
+coverage/
+coverage.json
+
+# Hardhat files
+cache/
+artifacts/
+
+# Foundry files
+forge-cache/
+out/
+
+# Docs
+docs/
+
+# Debug files
+*.log
