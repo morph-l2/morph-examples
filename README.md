@@ -1,3 +1,9 @@
+
+![morphlogo](https://morphl2brand.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Ffcab2c10-8da9-4414-aa63-4998ddf62e78%2Fdd757d90-b4fb-4c1d-9ccb-e4f3dab3b78d%2FMorph.logo_Horizontal_Green.png?table=block&id=83fb712b-a47d-4c64-8d9f-6bd1a9e9c68e&spaceId=fcab2c10-8da9-4414-aa63-4998ddf62e78&width=1490&userId=&cache=v2)
+
+
+
+
 # morph-examples
 This is the repo of a series of code examples that helps developers onboard onto the Morph Ecosystem
 
@@ -13,31 +19,19 @@ More examples will be added to this repository and we are open for suggestions o
 
 ## Getting Started
 
-### [contract-deploy-demo](https://github.com/morph-l2/morph-examples/tree/main/contract-deployment-demos)
-* [foundry-deploy](https://github.com/varun-doshi/morph-examples/tree/main/contract-deployment-demos/foundry-demo)
-* [hardhat-deploy](https://github.com/varun-doshi/morph-examples/tree/main/contract-deployment-demos/hardhat-demo)
-
-This directory includes projects that demonstrate how to use **Hardhat** or **Foundry** to deploy a contract in Morph's rollup network. 
-
-This project contains a simple contract that will lock a certain amount of Ether in the deployed contract for a specified amount of time.
 
 
-### [frontend-demo](https://github.com/varun-doshi/morph-examples/tree/main/frontend_examples/nextjs_wagmi_template)
-This directory consists of a simple Frontend setup allowing you to connect to your smart contract and interact with them from the UI.
+| Example Name | Description |
+|--------------|-------------|
+| [Account Abstraction](./account-abstraction-on-morph) | Learn to build consumer aqpplications on morph using Account abstraction tooling from our partner(Biconomy). |
+| [contract deployment](./contract-deployment-examples) | Learn how to deploy your smart contracts on Morph using foundry and hardhat . |
+| [cross chain examples](./cross-chain-examples) | Deploy and interact with LayerZero's OFT contracts on Morph. |
+| [Nft examples](./nfts-on-morph) | Learn how to build and deploy NFTs on Morph. |
+| [oracle examples](./oracles-on-morph) | Use pyth oracle to integrate off-chain data into your dApp. |
+| [subgraph examples](./subgraphs-on-morph) | Learn how to use Goldsky subgraph in your application. |
 
-<!--
 
-## Miscellaneous
 
-### [create2-demo](https://github.com/morphl2/morph-examples/tree/main/contract-deploy-demo)
-
-This project demonstrates how to use the `create2` opcode and tests it across various networks.
-
-### [gas-estimation-demo](https://github.com/morphl2/morph-examples/tree/main/contract-deploy-demo)
-
-This project demonstrates how to use estimate gas on Morph
-
--->
 
 ## Chain Configuration
 
