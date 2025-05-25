@@ -1,5 +1,5 @@
 
-![morphlogo](https://morphl2brand.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Ffcab2c10-8da9-4414-aa63-4998ddf62e78%2Fdd757d90-b4fb-4c1d-9ccb-e4f3dab3b78d%2FMorph.logo_Horizontal_Green.png?table=block&id=83fb712b-a47d-4c64-8d9f-6bd1a9e9c68e&spaceId=fcab2c10-8da9-4414-aa63-4998ddf62e78&width=1490&userId=&cache=v2)
+![morphlogo](https://github.com/user-attachments/assets/587b5f9f-b4ee-4ad7-9e54-c2efc3d32127)
 
 
 
