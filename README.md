@@ -29,6 +29,7 @@ More examples will be added to this repository and we are open for suggestions o
 | [Nft examples](./nfts-on-morph) | Learn how to build and deploy NFTs on Morph. |
 | [oracle examples](./oracles-on-morph) | Use pyth oracle to integrate off-chain data into your dApp. |
 | [subgraph examples](./subgraphs-on-morph) | Learn how to use Goldsky subgraph in your application. |
+| [EIP-7702 examples](./eip-7702-on-morph) | EIP-7702 gas sponsorship example — sponsor pays gas on behalf of EOA. |
 
 
 

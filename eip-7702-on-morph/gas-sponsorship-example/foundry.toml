@@ -1,0 +1,13 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.24"
+
+[rpc_endpoints]
+morph_testnet = "${MORPH_TESTNET_URL}"
+morph_mainnet = "${MORPH_MAINNET_URL}"
+
+[etherscan]
+morph_testnet = { key = "anything", chain = 2910, url = "https://explorer-api-hoodi.morph.network/api?" }
+morph_mainnet = { key = "anything", chain = 2818, url = "https://explorer-api.morphl2.io/api?" }
