@@ -1,0 +1,28 @@
+{
+  "name": "eip-7702-gas-sponsorship-example",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "EIP-7702 gas sponsorship example on Morph",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "deploy": "forge script script/Deploy.s.sol --rpc-url morph_testnet --broadcast --verify",
+    "sponsor": "node --experimental-strip-types scripts/sponsor.ts",
+    "test": "forge test -v"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": ">=16.0.0",
+    "tsx": "^4.7.0",
+    "typescript": ">=5.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
