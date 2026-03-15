@@ -127,19 +127,13 @@ async function main() {
 
   console.log("  Sponsor is paying gas for EOA's operation");
 
-  // EIP-7702 Type 4 txs may need higher gas than RPC node estimates,
-  // especially on mainnet where some nodes underestimate Type 4 gas requirements
-  const isMainnet = chain.id === 2818;
-
+  // Gas fees (maxFeePerGas, maxPriorityFeePerGas) are automatically
+  // fetched from the RPC node by Viem — no need to set manually.
   const txHash = await sponsorWalletClient.sendTransaction({
     authorizationList: [authorization],
     to: eoa.address,
     gas: 500000n,
     nonce: pendingNonce,
-    ...(isMainnet && {
-      maxFeePerGas: 1000000000n,       // 1 gwei
-      maxPriorityFeePerGas: 500000000n, // 0.5 gwei
-    }),
     data: encodeFunctionData({
       abi: SimpleDelegationABI,
       functionName: "execute",
